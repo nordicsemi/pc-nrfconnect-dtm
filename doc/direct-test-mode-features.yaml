@@ -1,0 +1,226 @@
+app:
+  id: direct-test-mode
+  name: Direct Test Mode
+  repo: pc-nrfconnect-dtm
+
+statuses: [full, unsupported, not_applicable]
+
+general_app_features:
+  - id: select_device
+    name: Select device
+    description: "Select a connected device programmed with DTM-compatible firmware"
+  - id: select_serial_port
+    name: Select serial port
+    description: Select the serial port used for the DTM test
+  - id: select_baud_rate
+    name: Select baud rate
+    description: Select the baud rate used for the connection
+  - id: start_transmitter_test
+    name: Start transmitter test
+    description: Start transmitting DTM test packets from the device
+  - id: stop_transmitter_test
+    name: Stop transmitter test
+    description: Stop the running transmitter test
+  - id: start_receiver_test
+    name: Start receiver test
+    description: Start receiving DTM test packets on the device
+  - id: stop_receiver_test
+    name: Stop receiver test
+    description: Stop the running receiver test
+  - id: tx_packet_count_chart
+    name: TX packet count chart
+    description: Display the increasing number of transmitted (TX) packets on a chart
+  - id: rx_packet_count_chart
+    name: RX packet count chart
+    description: Display the increasing number of received (RX) packets on a chart
+  - id: transmit_channel_mode_single_sweep
+    name: Transmit channel mode (Single/Sweep)
+    description: Configure transmission on a single channel or across a channel range
+  - id: set_transmit_channel
+    name: Set transmit channel
+    description: Select the channel on which to transmit test packets
+  - id: set_transmit_power
+    name: Set transmit power
+    description: "Set transmission power (-40 dBm to 8 dBm)"
+  - id: set_transmit_period
+    name: Set transmit period
+    description: Set the time duration for transmission (Sweep mode only)
+  - id: set_transmit_physical_layer_phy
+    name: Set transmit physical layer (PHY)
+    description: Select the PHY layer(s) on which to transmit test packets
+  - id: set_transmit_packet_type
+    name: Set transmit packet type
+    description: Select the test pattern/payload type for transmitted packets
+  - id: set_transmit_packet_length
+    name: Set transmit packet length
+    description: Select the length of transmitted packets
+  - id: set_transmit_timeout
+    name: Set transmit timeout
+    description: Set how long the DUT waits for a response during transmission
+  - id: receive_channel_mode_single_sweep
+    name: Receive channel mode (Single/Sweep)
+    description: Configure reception on a single channel or across a channel range
+  - id: set_receive_channel
+    name: Set receive channel
+    description: Select the channel on which to receive test packets
+  - id: set_receive_period
+    name: Set receive period
+    description: Set the time duration for reception (Sweep mode only)
+  - id: set_receive_physical_layer_phy
+    name: Set receive physical layer (PHY)
+    description: Select the PHY layer(s) on which to receive test packets
+  - id: set_receive_timeout
+    name: Set receive timeout
+    description: Set how long the DUT waits for a response during reception
+  - id: restart_application
+    name: Restart application
+    description: Restart the app via a keyboard shortcut (Ctrl+R / Command+R)
+
+device_specific_features: []
+
+shared_features:
+  - id: restore_defaults
+    name: Restore defaults
+    description: "Restore all app's settings to default"
+  - id: give_feedback
+    name: Give Feedback
+    description: Send a feedback message
+  - id: open_documentation
+    name: Open Documentation
+    description: Open external documentation page
+  - id: verbose_logging
+    name: Verbose Logging
+    description: Turn on verbose logging and restart the app
+  - id: create_system_report
+    name: Create system report
+    description: Generate a txt document with detailed report
+  - id: show_log
+    name: Show Log
+    description: Toggle log window
+  - id: autoscroll_log
+    name: Autoscroll log
+    description: Toggle log window autoscroll
+  - id: open_log_file
+    name: Open log file
+    description: Open the current log file in a text editor
+  - id: clear_log
+    name: Clear Log
+    description: Clear the log window
+
+supported_devices:
+  - device: nRF5340 DK
+    pca: PCA10095
+    verification_version:
+    support:
+
+  - device: nRF54H20 DK
+    pca: PCA10175
+    verification_version:
+    support:
+
+  - device: nRF54L15 DK
+    pca: PCA10156
+    verification_version:
+    support:
+
+  - device: nRF54LC10 DK
+    pca: PCA10226
+    verification_version:
+    support:
+
+  - device: nRF54LM20 DK
+    pca: PCA10184
+    verification_version:
+    support:
+
+  - device: nRF54LM20 Dongle
+    pca: PCA10208
+    verification_version:
+    support:
+
+  - device: nRF54LS05 DK
+    pca: PCA10214
+    verification_version:
+    support:
+
+  - device: nRF54LV10 DK
+    pca: PCA10188
+    verification_version:
+    support:
+
+  - device: nRF93M1 DK
+    pca: PCA10232
+    verification_version:
+    support:
+
+  - device: nRF93M1 DK
+    pca: PCA10237
+    verification_version:
+    support:
+
+unsupported_devices:
+  - device: "Nordic Thingy:52"
+    pca: PCA20020
+
+  - device: "Nordic Thingy:53"
+    pca: PCA20053
+
+  - device: "Nordic Thingy:91"
+    pca: PCA20035
+
+  - device: "Nordic Thingy:91 X"
+    pca: PCA20049
+
+  - device: nPM 1300 EK
+    pca: PCA10152  
+
+  - device: nPM 1304 EK
+    pca: PCA10195
+
+  - device: nPM 2100 EK
+    pca: PCA10170
+
+  - device: nRF51 DK
+    pca: PCA10028
+
+  - device: nRF51 Dongle
+    pca: PCA10031
+
+  - device: nRF52 DK
+    pca: PCA10040
+
+  - device: nRF52833 DK
+    pca: PCA10100
+
+  - device: nRF52840 DK
+    pca: PCA10056
+
+  - device: nRF52840 Dongle
+    pca: PCA10059
+
+  - device: nRF5340 Audio DK
+    pca: PCA10121
+
+  - device: nRF7002 DK
+    pca: PCA10143
+
+  - device: nRF9131 EK
+    pca: PCA10165
+
+  - device: nRF9151 DK
+    pca: PCA10171
+
+  - device: nRF9151 SMA DK
+    pca: PCA10201
+
+  - device: nRF9160 DK
+    pca: PCA10090
+
+  - device: nRF9161 DK
+    pca: PCA10153
+
+  - device: nRF9251 DK
+    pca: PCA10218
+
+  - device: PPK2
+    pca: PCA63100
