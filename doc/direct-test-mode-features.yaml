@@ -110,7 +110,7 @@ shared_features:
 supported_devices:
   - device: nRF5340 DK
     pca: PCA10095
-    verification_version:
+    verification_version: 3.1.2
     support:
 
   - device: nRF54H20 DK
