@@ -8,7 +8,7 @@ statuses: [full, unsupported, not_applicable]
 general_app_features:
   - id: select_device
     name: Select device
-    description: "Select a connected device programmed with DTM-compatible firmware"
+    description: Select a connected device programmed with DTM-compatible firmware
   - id: select_serial_port
     name: Select serial port
     description: Select the serial port used for the DTM test
@@ -41,7 +41,7 @@ general_app_features:
     description: Select the channel on which to transmit test packets
   - id: set_transmit_power
     name: Set transmit power
-    description: "Set transmission power (-40 dBm to 8 dBm)"
+    description: Set transmission power (-40 dBm to 8 dBm)
   - id: set_transmit_period
     name: Set transmit period
     description: Set the time duration for transmission (Sweep mode only)
@@ -81,7 +81,7 @@ device_specific_features: []
 shared_features:
   - id: restore_defaults
     name: Restore defaults
-    description: "Restore all app's settings to default"
+    description: Restore all app's settings to default
   - id: give_feedback
     name: Give Feedback
     description: Send a feedback message
@@ -159,20 +159,20 @@ supported_devices:
     support:
 
 unsupported_devices:
-  - device: "Nordic Thingy:52"
+  - device: Nordic Thingy:52
     pca: PCA20020
 
-  - device: "Nordic Thingy:53"
+  - device: Nordic Thingy:53
     pca: PCA20053
 
-  - device: "Nordic Thingy:91"
+  - device: Nordic Thingy:91
     pca: PCA20035
 
-  - device: "Nordic Thingy:91 X"
+  - device: Nordic Thingy:91 X
     pca: PCA20049
 
   - device: nPM 1300 EK
-    pca: PCA10152  
+    pca: PCA10152
 
   - device: nPM 1304 EK
     pca: PCA10195
