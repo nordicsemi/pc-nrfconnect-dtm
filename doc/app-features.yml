@@ -108,6 +108,21 @@ shared_features:
     description: Clear the log window
 
 supported_devices:
+  - device: nRF52 DK
+    pca: PCA10040
+    verification_version:
+    support:
+
+  - device: nRF52833 DK
+    pca: PCA10100
+    verification_version:
+    support:
+
+  - device: nRF52840 DK
+    pca: PCA10056
+    verification_version:
+    support:
+
   - device: nRF5340 DK
     pca: PCA10095
     verification_version: 3.1.2
@@ -169,7 +184,7 @@ unsupported_devices:
     pca: PCA20035
 
   - device: Nordic Thingy:91 X
-    pca: PCA20049
+    pca: PCA20065
 
   - device: nPM 1300 EK
     pca: PCA10152
@@ -185,15 +200,6 @@ unsupported_devices:
 
   - device: nRF51 Dongle
     pca: PCA10031
-
-  - device: nRF52 DK
-    pca: PCA10040
-
-  - device: nRF52833 DK
-    pca: PCA10100
-
-  - device: nRF52840 DK
-    pca: PCA10056
 
   - device: nRF52840 Dongle
     pca: PCA10059
