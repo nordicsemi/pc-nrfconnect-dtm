@@ -56,7 +56,7 @@ general_app_features:
     description: Select the length of transmitted packets
   - id: set_transmit_timeout
     name: Set transmit timeout
-    description: Set how long the DUT waits for a response during transmission
+    description: Set the maximum transmission duration before automatically stopping
   - id: receive_channel_mode_single_sweep
     name: Receive channel mode (Single/Sweep)
     description: Configure reception on a single channel or across a channel range
@@ -71,7 +71,7 @@ general_app_features:
     description: Select the PHY layer(s) on which to receive test packets
   - id: set_receive_timeout
     name: Set receive timeout
-    description: Set how long the DUT waits for a response during reception
+    description: Set the maximum reception duration before automatically stopping
   - id: restart_application
     name: Restart application
     description: Restart the app via a keyboard shortcut (Ctrl+R / Command+R)
